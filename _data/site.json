@@ -1,0 +1,47 @@
+{
+  "slug": "spravasvj-hb",
+  "nazev": "Správa SVJ Havlíčkův Brod",
+  "url": "https://webhunter-navrhy.github.io/spravasvj-hb/",
+  "base": "/spravasvj-hb/",
+  "lang": "cs",
+  "popis": "Kompletní správa SVJ, účetnictví, roční vyúčtování a technická správa domů. Správa SVJ Havlíčkův Brod, působnost Vysočina a celá ČR.",
+  "navrh": true,
+  "domena": "",
+  "og_image": "placeholder.jpg",
+  "logo": "logo.svg",
+  "theme_color": "#f6f3ec",
+  "typ": "LocalBusiness",
+  "ico": "",
+  "kontakt": {
+    "email": "",
+    "telefon": "",
+    "adresa": {
+      "ulice": "",
+      "psc": "",
+      "mesto": "",
+      "zeme": "CZ"
+    }
+  },
+  "oteviraci_doba": [],
+  "sameas": [],
+  "cenove_rozpeti": "",
+  "formular": {
+    "endpoint": "",
+    "demo": true,
+    "predmet": "Poptávka z webu"
+  },
+  "nav": [
+    {
+      "text": "Služby",
+      "href": "#sluzby"
+    },
+    {
+      "text": "Jak pracujeme",
+      "href": "#pece"
+    },
+    {
+      "text": "Kontakt",
+      "href": "#kontakt"
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{% extends "_base.html" %}
+{% set titulek = 'Správa SVJ Havlíčkův Brod – správa a účetnictví pro společenství vlastníků' %}
+{% set cesta = '' %}
+{% block obsah %}
+<section class="sekce hero">
+  <div class="wrap">
+    <div>
+      <span class="stitek">Od 1. ledna 2027 · Vysočina</span>
+      <h1>Správa vašeho domu bez starostí</h1>
+      <p class="uvod">Kompletní správa a účetnictví pro společenství vlastníků jednotek. Hospodaříme transparentně a hlídáme termíny, aby vlastníci věděli, na čem jsou.</p>
+      <div class="akce">
+        <a class="tlacitko" href="#kontakt">Napsat nám</a>
+        <a class="odkaz" href="#sluzby">Co zajišťujeme</a>
+      </div>
+    </div>
+    <svg class="fasada" viewBox="0 0 320 470" aria-hidden="true" focusable="false"><polygon points="20,90 160,34 300,90 300,450 20,450" fill="#0e3c59"/><rect x="214" y="12" width="22" height="44" fill="#0e3c59"/><rect x="84" y="20" width="22" height="40" fill="#0e3c59"/><rect x="46" y="96" width="60" height="46" fill="#174a69" stroke="#5d8fae" stroke-width="3"/><rect x="132" y="96" width="60" height="46" fill="#174a69" stroke="#5d8fae" stroke-width="3"/><rect x="218" y="96" width="60" height="46" fill="#f2b53c" stroke="#5d8fae" stroke-width="3"/><rect x="46" y="162" width="60" height="46" fill="#f2b53c" stroke="#5d8fae" stroke-width="3"/><rect x="132" y="162" width="60" height="46" fill="#174a69" stroke="#5d8fae" stroke-width="3"/><rect x="218" y="162" width="60" height="46" fill="#174a69" stroke="#5d8fae" stroke-width="3"/><rect x="46" y="228" width="60" height="46" fill="#174a69" stroke="#5d8fae" stroke-width="3"/><rect x="132" y="228" width="60" height="46" fill="#f2b53c" stroke="#5d8fae" stroke-width="3"/><rect x="218" y="228" width="60" height="46" fill="#174a69" stroke="#5d8fae" stroke-width="3"/><rect x="46" y="294" width="60" height="46" fill="#174a69" stroke="#5d8fae" stroke-width="3"/><rect x="132" y="294" width="60" height="46" fill="#174a69" stroke="#5d8fae" stroke-width="3"/><rect x="218" y="294" width="60" height="46" fill="#f2b53c" stroke="#5d8fae" stroke-width="3"/><rect x="46" y="360" width="60" height="46" fill="#174a69" stroke="#5d8fae" stroke-width="3"/><rect x="132" y="360" width="60" height="46" fill="#f2b53c" stroke="#5d8fae" stroke-width="3"/><rect x="218" y="360" width="60" height="46" fill="#174a69" stroke="#5d8fae" stroke-width="3"/><rect x="136" y="394" width="48" height="56" fill="#f6f3ec"/><rect x="0" y="450" width="320" height="6" fill="#2e678a"/></svg>
+  </div>
+</section>
+
+<section class="sekce okna" id="sluzby">
+  <div class="wrap">
+    <h2>Co pro váš dům zajistíme</h2>
+    <p class="predmluva">Každá služba je jedno okno do chodu domu. Vyberte si celek, nebo jen to, co zrovna potřebujete.</p>
+    <div class="okna-mrizka">
+      {% for s in data.sluzby %}<article class="okno{{ ' sviti' if loop.first }}"><h3>{{ s.nazev }}</h3><p>{{ s.popis }}</p></article>{% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="sekce pece" id="pece">
+  <div class="wrap">
+    <div>
+      <h2>Na čem si zakládáme</h2>
+      <p class="uvod">Vlastník má právo vědět, kam jdou peníze z fondu oprav. Proto je péče o dům u nás přehledná.</p>
+    </div>
+    <dl>
+      <div class="radek">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 20h18M6 16V9m6 7V5m6 11v-6"/></svg>
+        <div><dt>Transparentní hospodaření</dt><dd>Jasný přehled příjmů a výdajů společenství.</dd></div>
+      </div>
+      <div class="radek">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h14v16l-3-2-2 2-2-2-2 2-2-2-3 2zM9 9h6M9 13h6"/></svg>
+        <div><dt>Vyúčtování služeb</dt><dd>Srozumitelné vyúčtování, ve kterém se vlastník vyzná.</dd></div>
+      </div>
+      <div class="radek">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="5" width="16" height="15" rx="2"/><path d="M4 10h16M9 3v4m6-4v4"/></svg>
+        <div><dt>Hlídání splatností</dt><dd>Hlídáme termíny plateb i povinností domu.</dd></div>
+      </div>
+      <div class="radek">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5h16v11H9l-5 4z"/></svg>
+        <div><dt>Komunikace s úřady a dodavateli</dt><dd>Jednání s úřady a dodavateli vyřídíme za společenství.</dd></div>
+      </div>
+    </dl>
+  </div>
+</section>
+
+<section class="oblast">
+  <div class="wrap">
+    <h2>Působíme na Vysočině</h2>
+    <p>Jsme z Havlíčkova Brodu. <span class="firma">Správu zajišťujeme na Vysočině, případně i v celé České republice.</span></p>
+  </div>
+</section>
+
+<section class="sekce kontakt" id="kontakt">
+  <div class="wrap">
+    <div>
+      <h2>Ozvěte se nám</h2>
+      <p class="uvod">Napište, o jaký dům jde a co potřebujete vyřešit. Ozveme se vám s dalším postupem.</p>
+    </div>
+    {% include "_formular.html" %}
+  </div>
+</section>
+{% endblock %}

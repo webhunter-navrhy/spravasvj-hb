@@ -1,0 +1,18 @@
+[
+  {
+    "nazev": "Kompletní správa SVJ",
+    "popis": "Chod společenství vlastníků od jednání s vlastníky až po každodenní agendu domu."
+  },
+  {
+    "nazev": "Vedení účetnictví SVJ",
+    "popis": "Průběžné účetnictví společenství vedené přehledně a včas."
+  },
+  {
+    "nazev": "Roční vyúčtování",
+    "popis": "Zpracování ročních vyúčtování služeb tak, aby jim rozuměl každý vlastník."
+  },
+  {
+    "nazev": "Technická správa a revize",
+    "popis": "Zajištění technické správy domu a pravidelných revizí, aby nic nepropadlo."
+  }
+]

@@ -1,0 +1,24 @@
+{
+ "slug": "spravasvj-hb",
+ "zdroj_url": null,
+ "firma": "Správa SVJ Havlíčkův Brod",
+ "obor": [],
+ "ico": "",
+ "ares": null,
+ "kontakty": {},
+ "logo": null,
+ "barvy": {},
+ "fotky": [],
+ "fakta": [],
+ "chybi": [
+  "firma",
+  "obor",
+  "kontakty",
+  "IČO",
+  "logo",
+  "barvy",
+  "fotky",
+  "texty/služby"
+ ],
+ "_poznamka": "Prázdný brief k ručnímu vyplnění."
+}
