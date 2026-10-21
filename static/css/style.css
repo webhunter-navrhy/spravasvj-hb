@@ -223,3 +223,12 @@ a { color: inherit; }
 .sekce.pece { padding-bottom: var(--space-5); }
 .sekce.kontakt { padding-top: var(--space-5); }
 @media (max-width: 40rem) { .hlavicka .wrap { gap: 0.5rem; } .hlavicka nav { flex-wrap: nowrap; gap: 0.1rem; } .hlavicka nav a { padding-inline: 0.35rem; } .logo img { height: 34px; } }
+
+/* kolo 3: ulice místo jednoho domu */
+.hero { padding-block: var(--space-5) 0; background: linear-gradient(180deg, #f6f3ec 0%, #e3ebf0 100%); }
+.hero .wrap { display: block; }
+.hero .wrap > div:first-child { padding-bottom: var(--space-5); }
+.hero h1 { max-width: 18ch; font-size: var(--step-5); }
+.hero .uvod { max-width: 40rem; }
+.ulice { width: 100%; height: clamp(11rem, 24vw, 21rem); display: block; margin-top: var(--space-2); }
+@media (max-width: 40rem) { .hero h1 { font-size: var(--step-4); } .ulice { height: 9rem; } }
