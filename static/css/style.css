@@ -211,3 +211,8 @@ a { color: inherit; }
 .oblast-box { margin-top: var(--space-4); background: var(--pale); border-left: 4px solid var(--blue); padding: var(--space-3); }
 .oblast-box .firma { font-family: var(--font-head); font-weight: 600; font-size: var(--step-1); color: var(--navy); margin-bottom: 0.4rem; }
 .paticka { margin-top: 0; }
+.hero { background: var(--pale); }
+.sekce.okna { background: #092c42; }
+.strecha, .zed { background: #2e678a; }
+.hero .stitek { background: #fff; }
+@media (max-width: 52rem) { .hero { background: var(--pale); } }
