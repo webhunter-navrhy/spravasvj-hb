@@ -1,18 +1,17 @@
 {
   "znamka": 7,
   "slabiny": [
-    "Hero na PC i mobilu je pořád jen plochá SVG budova z obdélníků. Fotka ani fotorealistický obraz na webu stále nejsou, takže tahle část minulé výtky opravená není a hero dál působí jako klipart. Oprava: dát do hero velký obraz přes celou šířku nebo přes polovinu, nejlépe vizualizaci českého činžáku či paneláku na Vysočině (např. přes tools/gen_cf.py). Rozsvícená okna nechat jako malý grafický detail, ne jako hlavní obraz.",
-    "Kontakt a patička na všech šířkách: pořád je tam jen formulář v demo režimu a v patičce samotný název firmy. Chybí e-mail, adresa, IČO i viditelná značka, že se kontakt doplní. Oprava: do bloku vedle „Působíme na Vysočině“ a do patičky dát řádek „E-mail a adresu doplníme“ (nebo skutečný e-mail ze zadání klientky) a k formuláři napsat, že jde o ukázku.",
-    "Mobil 390 px (buňky 1–2): SVG dům zabírá skoro celou druhou obrazovku, a tak se služby objeví až na třetím scrollu. V hlavičce navíc chybí odkaz „Služby“, jsou tam jen „Jak pracujeme“ a „Kontakt“. Oprava: na mobilu zmenšit hero obraz zhruba na 220 px výšky nebo ho oříznout jen na horní patra a do mobilní navigace vrátit „Služby“."
+    "Hero na PC i mobilu: hlavní obraz je pořád plochá SVG budova z obdélníků. Fotka ani fotorealistická vizualizace na webu nejsou, takže hero dál působí jako klipart a tahle výtka z minulého kola opravená není. Oprava: udělat hero jako velký obraz přes polovinu nebo celou šířku, třeba vizualizaci českého činžáku či paneláku na Vysočině přes tools/gen_cf.py ve tlumené modré gradaci loga. Rozsvícená žlutá okna nechat jen jako drobný grafický motiv, například v sekci Služby.",
+    "Hlavička na mobilu 390 px (všechny buňky): odkaz „Služby“ se vrátil, ale navigace se láme na dva řádky. „Kontakt“ visí sám na druhém řádku vpravo a hlavička tak má skoro 90 px a vypadá rozbitě. Oprava: na mobilu zmenšit mezery a písmo v navigaci a „Jak pracujeme“ zkrátit na „Postup“, aby se všechny tři odkazy vešly do jednoho řádku vedle loga. Druhá možnost je jedno tlačítko Menu.",
+    "Kontakt (PC buňka 3, mobil buňka 5): e-mail Zdeni.k@seznam.cz už je doplněný. Formulář je ale v demo režimu a u něj nic neříká, že jde o ukázku, takže zpráva odeslaná z návrhu nikam nedojde. Navíc mezi sekcí „Na čem si zakládáme“ a „Ozvěte se nám“ je na PC asi 120 px prázdného místa. Oprava: pod tlačítko Odeslat dát drobný text „Formulář zprovozníme po spuštění webu, zatím pište na e-mail výše“ a srovnat spodní odsazení sekce Péče se zbytkem webu."
   ],
-  "zavazne": [
-    "Kontakt a patička: na celém webu není žádný e-mail, adresa ani IČO a formulář je jen v demo režimu. Návštěvník firmu reálně nemá jak kontaktovat a nevidí ani značku, že se kontakt doplní."
-  ],
+  "zavazne": [],
   "silne": [
-    "Služby jsou teď přestavěné na jednu fasádu domu se střechou, karty tvoří okna a první svítí žlutě. Koncept „okno do chodu domu“ je čitelný a „obdélníčky“ zmizely.",
-    "Sekce „Na čem si zakládáme“ je v mřížce 2×2 přes celou šířku, prázdný levý sloupec zmizel. Pás Vysočiny je sloučený s Kontaktem, takže web už nekončí dvěma prázdnými plochami.",
-    "Brand sedí: logo klientky vlevo v hlavičce, paleta #2e678a / #0e3c59 z loga, světlý podklad bez tmavého luxusu. Štítek „Od 1. ledna 2027 · Vysočina“ má nyní oporu v briefu. Text popisů služeb je větší a čitelný. QA je bez přetečení na všech šířkách."
+    "Kontakt je opravený. E-mail jako proklik mailto je v bloku vedle „Působíme na Vysočině“ i v patičce, takže firmu jde reálně kontaktovat.",
+    "Na mobilu je hero zmenšené a služby začínají už na druhé obrazovce, v navigaci je zase „Služby“.",
+    "Koncept fasády se táhne webem: služby jsou okna domu pod střechou, první z nich svítí žlutě. Brand drží logo vlevo a modré barvy z loga klientky.",
+    "Obsah je pravdivý a vychází z briefu: start 1. 1. 2027, čtyři služby, Vysočina, případně celá ČR. Nejsou tu vymyšlená čísla ani reference a nikde nic nepřetéká."
   ],
-  "verdikt": "Služby, rozložení sekce hodnot a sloučení Vysočiny s Kontaktem jsou opravené. Hero je ale pořád klipartová SVG budova bez jediného obrazu a kontakt stále chybí úplně. K odeslání je potřeba dodat hero obraz a kontakt nebo jeho viditelný placeholder.",
-  "_hash": "d62847afb640d086be308ae1cb6381156fd97c27"
+  "verdikt": "Kontakt a mobilní hero jsou opravené a závažná vada zmizela. Hero na PC je ale pořád klipartová SVG budova místo velkého obrazu a mobilní hlavička se láme na dva řádky, takže web na 8 ještě nemá.",
+  "_hash": "801d54fef68c6d9d30011ac07802a49ebd7494cb"
 }
