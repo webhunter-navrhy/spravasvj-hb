@@ -216,3 +216,6 @@ a { color: inherit; }
 .strecha, .zed { background: #2e678a; }
 .hero .stitek { background: #fff; }
 @media (max-width: 52rem) { .hero { background: var(--pale); } }
+.kontakt-mail { margin-top: var(--space-3); font-weight: 600; }
+.kontakt-mail a { color: var(--navy); }
+@media (max-width: 40rem) { .hlavicka nav a:first-child { display: inline-flex; } .hlavicka nav { gap: 0.4rem; } .hlavicka nav a { font-size: 0.8rem; } .fasada { max-width: 11rem; } .hero h1 { font-size: var(--step-4); } }

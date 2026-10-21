@@ -1,17 +1,18 @@
 {
-  "znamka": 6,
+  "znamka": 7,
   "slabiny": [
-    "Hero a sekce Služby (PC i mobil): plochá SVG budova z obdélníků a pod ní čtyři stejné obdélníkové karty. Celé to působí jako klipart a „obdélníčky“, které Rafael už odmítl. Na webu není ani jedna fotka. Oprava: do hero dát velký obraz přes celou šířku nebo do půlky, ideálně reálný bytový dům z Havlíčkova Brodu (případně fotorealistickou vizualizaci českého činžáku či paneláku). Motiv rozsvícených oken nechat jako detail. Služby postavit jako skutečnou fasádu, kde karty tvoří okna jednoho domu, ne čtyři samostatné boxy.",
-    "Sekce „Na čem si zakládáme“ na 1440 px (koláž PC, buňka 3): po odscrollování nadpisu zůstane levá polovina úplně prázdná a vpravo běží úzký seznam s drobnými ikonami. Hned pod ním je pás „Působíme na Vysočině“, jen s jednou větou. Oprava: nadpis v levém sloupci udělat `position: sticky`, nebo body přeskládat do mřížky 2×2 přes celou šířku. Pás Vysočiny buď rozšířit o jednoduchou mapku kraje s vyznačeným Havlíčkovým Brodem, nebo ho sloučit s Kontaktem, ať web nekončí dvěma prázdnými plochami.",
-    "Popisy v kartách služeb (navy blok na PC) mají zhruba 11–12 px a na tmavém podkladu se čtou špatně. Zvětšit je na 15–16 px a zesvětlit text. V Kontaktu a v patičce chybí e-mail, adresa i IČO, je tam jen formulář v demo režimu. Doplnit kontakt ze zadání, nebo viditelnou značku „e-mail doplníme“. Štítek „Od 1. ledna 2027 · Vysočina“ v hero nemá oporu v brief.json (brief je prázdný). Ověřit ho v zadání, a když tam není, odstranit."
+    "Hero na PC i mobilu je pořád jen plochá SVG budova z obdélníků. Fotka ani fotorealistický obraz na webu stále nejsou, takže tahle část minulé výtky opravená není a hero dál působí jako klipart. Oprava: dát do hero velký obraz přes celou šířku nebo přes polovinu, nejlépe vizualizaci českého činžáku či paneláku na Vysočině (např. přes tools/gen_cf.py). Rozsvícená okna nechat jako malý grafický detail, ne jako hlavní obraz.",
+    "Kontakt a patička na všech šířkách: pořád je tam jen formulář v demo režimu a v patičce samotný název firmy. Chybí e-mail, adresa, IČO i viditelná značka, že se kontakt doplní. Oprava: do bloku vedle „Působíme na Vysočině“ a do patičky dát řádek „E-mail a adresu doplníme“ (nebo skutečný e-mail ze zadání klientky) a k formuláři napsat, že jde o ukázku.",
+    "Mobil 390 px (buňky 1–2): SVG dům zabírá skoro celou druhou obrazovku, a tak se služby objeví až na třetím scrollu. V hlavičce navíc chybí odkaz „Služby“, jsou tam jen „Jak pracujeme“ a „Kontakt“. Oprava: na mobilu zmenšit hero obraz zhruba na 220 px výšky nebo ho oříznout jen na horní patra a do mobilní navigace vrátit „Služby“."
   ],
-  "zavazne": [],
+  "zavazne": [
+    "Kontakt a patička: na celém webu není žádný e-mail, adresa ani IČO a formulář je jen v demo režimu. Návštěvník firmu reálně nemá jak kontaktovat a nevidí ani značku, že se kontakt doplní."
+  ],
   "silne": [
-    "Je tam konkrétní nápad z oboru: dům s rozsvícenými okny a „každá služba je jedno okno“. Navazuje na něj i první služba zvýrazněná žlutě jako rozsvícené okno.",
-    "Čistá, čitelná typografie (Bricolage Grotesque + Public Sans), háčky v pořádku, jasná hierarchie a CTA vlevo v hero.",
-    "Na žádné šířce nic nepřetéká, na mobilu je pořadí obsahu logické, stránka má 0,14 MB a nejsou v ní typické AI vzory (marquee, číslování 01/02, kurzíva v nadpisech, tmavý luxus).",
-    "Texty služeb jsou věcné, bez vymyšlených čísel a recenzí."
+    "Služby jsou teď přestavěné na jednu fasádu domu se střechou, karty tvoří okna a první svítí žlutě. Koncept „okno do chodu domu“ je čitelný a „obdélníčky“ zmizely.",
+    "Sekce „Na čem si zakládáme“ je v mřížce 2×2 přes celou šířku, prázdný levý sloupec zmizel. Pás Vysočiny je sloučený s Kontaktem, takže web už nekončí dvěma prázdnými plochami.",
+    "Brand sedí: logo klientky vlevo v hlavičce, paleta #2e678a / #0e3c59 z loga, světlý podklad bez tmavého luxusu. Štítek „Od 1. ledna 2027 · Vysočina“ má nyní oporu v briefu. Text popisů služeb je větší a čitelný. QA je bez přetečení na všech šířkách."
   ],
-  "verdikt": "Web je korektní a má zárodek konceptu, ale bez jediné fotky, s klipartovou budovou a krabicovými kartami působí chudě a šablonovitě. Rafael by ho nejspíš odmítl jako „moc jednoduchej“. Opravit: dodat silný obraz domu, zaplnit prázdné plochy, doplnit kontakt a ověřit štítek s datem.",
-  "_hash": "da5ab163bdd3435642ad27b9ae67a6543ce583a5"
+  "verdikt": "Služby, rozložení sekce hodnot a sloučení Vysočiny s Kontaktem jsou opravené. Hero je ale pořád klipartová SVG budova bez jediného obrazu a kontakt stále chybí úplně. K odeslání je potřeba dodat hero obraz a kontakt nebo jeho viditelný placeholder.",
+  "_hash": "d62847afb640d086be308ae1cb6381156fd97c27"
 }
