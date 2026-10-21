@@ -1,0 +1,62 @@
+{
+  "url": "https://webhunter-navrhy.github.io/spravasvj-hb/",
+  "ok": true,
+  "chyby": [],
+  "varovani": [
+    "Title má 74 znaků (>70)",
+    "Dotykové cíle <40 px na mobilu: 2× (např. a.logo \"\" 140×38; a.odkaz \"Co zajišťujeme\" 112×26)"
+  ],
+  "metriky": {
+    "sirky": {
+      "1440": {
+        "scrollWidth": 1440,
+        "pocet_pretekajicich": 0
+      },
+      "1280": {
+        "scrollWidth": 1280,
+        "pocet_pretekajicich": 0
+      },
+      "1024": {
+        "scrollWidth": 1024,
+        "pocet_pretekajicich": 0
+      },
+      "820": {
+        "scrollWidth": 820,
+        "pocet_pretekajicich": 0
+      },
+      "390": {
+        "scrollWidth": 390,
+        "pocet_pretekajicich": 0
+      },
+      "360": {
+        "scrollWidth": 360,
+        "pocet_pretekajicich": 0
+      }
+    },
+    "preneseno_PC_MB": 0.14,
+    "snimku_PC": 3,
+    "preneseno_mobil_MB": 0.14,
+    "snimku_mobil": 4,
+    "seo": {
+      "title": "Správa SVJ Havlíčkův Brod – správa a účetnictví pro společenství vlastníků",
+      "description": "Kompletní správa SVJ, účetnictví, roční vyúčtování a technická správa domů. Správa SVJ Havlíčkův Bro",
+      "lang": "cs",
+      "h1": 1,
+      "jsonld": [
+        true
+      ],
+      "robots": "noindex, nofollow",
+      "og_image": "https://webhunter-navrhy.github.io/spravasvj-hb/og.jpg",
+      "bez_v": [],
+      "canonical": true,
+      "viewport": true
+    },
+    "maly_dotykovy_cil": 2,
+    "font_nadpis": "Bricolage Grotesque",
+    "font_text": "Public Sans",
+    "podstranky": {
+      "stranek": 1,
+      "obrazku": 1
+    }
+  }
+}
