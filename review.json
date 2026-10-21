@@ -1,0 +1,17 @@
+{
+  "znamka": 6,
+  "slabiny": [
+    "Hero a sekce Služby (PC i mobil): plochá SVG budova z obdélníků a pod ní čtyři stejné obdélníkové karty. Celé to působí jako klipart a „obdélníčky“, které Rafael už odmítl. Na webu není ani jedna fotka. Oprava: do hero dát velký obraz přes celou šířku nebo do půlky, ideálně reálný bytový dům z Havlíčkova Brodu (případně fotorealistickou vizualizaci českého činžáku či paneláku). Motiv rozsvícených oken nechat jako detail. Služby postavit jako skutečnou fasádu, kde karty tvoří okna jednoho domu, ne čtyři samostatné boxy.",
+    "Sekce „Na čem si zakládáme“ na 1440 px (koláž PC, buňka 3): po odscrollování nadpisu zůstane levá polovina úplně prázdná a vpravo běží úzký seznam s drobnými ikonami. Hned pod ním je pás „Působíme na Vysočině“, jen s jednou větou. Oprava: nadpis v levém sloupci udělat `position: sticky`, nebo body přeskládat do mřížky 2×2 přes celou šířku. Pás Vysočiny buď rozšířit o jednoduchou mapku kraje s vyznačeným Havlíčkovým Brodem, nebo ho sloučit s Kontaktem, ať web nekončí dvěma prázdnými plochami.",
+    "Popisy v kartách služeb (navy blok na PC) mají zhruba 11–12 px a na tmavém podkladu se čtou špatně. Zvětšit je na 15–16 px a zesvětlit text. V Kontaktu a v patičce chybí e-mail, adresa i IČO, je tam jen formulář v demo režimu. Doplnit kontakt ze zadání, nebo viditelnou značku „e-mail doplníme“. Štítek „Od 1. ledna 2027 · Vysočina“ v hero nemá oporu v brief.json (brief je prázdný). Ověřit ho v zadání, a když tam není, odstranit."
+  ],
+  "zavazne": [],
+  "silne": [
+    "Je tam konkrétní nápad z oboru: dům s rozsvícenými okny a „každá služba je jedno okno“. Navazuje na něj i první služba zvýrazněná žlutě jako rozsvícené okno.",
+    "Čistá, čitelná typografie (Bricolage Grotesque + Public Sans), háčky v pořádku, jasná hierarchie a CTA vlevo v hero.",
+    "Na žádné šířce nic nepřetéká, na mobilu je pořadí obsahu logické, stránka má 0,14 MB a nejsou v ní typické AI vzory (marquee, číslování 01/02, kurzíva v nadpisech, tmavý luxus).",
+    "Texty služeb jsou věcné, bez vymyšlených čísel a recenzí."
+  ],
+  "verdikt": "Web je korektní a má zárodek konceptu, ale bez jediné fotky, s klipartovou budovou a krabicovými kartami působí chudě a šablonovitě. Rafael by ho nejspíš odmítl jako „moc jednoduchej“. Opravit: dodat silný obraz domu, zaplnit prázdné plochy, doplnit kontakt a ověřit štítek s datem.",
+  "_hash": "da5ab163bdd3435642ad27b9ae67a6543ce583a5"
+}

@@ -183,3 +183,31 @@ a { color: inherit; }
 .paticka a { color: #fff; }
 .logo { display: inline-flex; align-items: center; min-height: 44px; }
 .hero .akce a.odkaz { display: inline-flex; align-items: center; min-height: 44px; }
+
+/* kolo 2 */
+.hero { background: linear-gradient(180deg, var(--bg) 0 70%, var(--pale) 70%); padding-bottom: 0; }
+.hero .wrap { align-items: end; }
+.hero .wrap > div:first-child { padding-bottom: var(--space-6); align-self: center; }
+.fasada { max-width: 34rem; margin-bottom: -2px; }
+.hero h1 { font-size: var(--step-5); max-width: 12ch; }
+.sekce.okna { padding-block: var(--space-6); }
+.fasada-sluzeb { margin-top: var(--space-4); max-width: 60rem; margin-inline: auto; }
+.strecha { height: clamp(3rem, 8vw, 6rem); background: #174a69; clip-path: polygon(0 100%, 50% 0, 100% 100%); margin-inline: -0.9rem; border-bottom: 0; }
+.zed { background: #174a69; padding: 0.9rem; margin-top: -1px; }
+.okna-mrizka { margin-top: 0; }
+.fasada-sluzeb .okno { background: #0e3c59; min-height: 11rem; padding: var(--space-3) var(--space-3); }
+.fasada-sluzeb .okno.sviti { background: var(--lit); }
+.okno h3 { font-size: var(--step-2); }
+.okno p { font-size: var(--step-0); color: #dbe6ee; }
+.okno.sviti p { color: #2c2003; }
+.pece .wrap { grid-template-columns: 1fr; gap: var(--space-4); }
+.pece .uvod { max-width: 42rem; }
+.pece dl { grid-template-columns: repeat(2, 1fr); column-gap: var(--space-5); }
+.pece .radek { grid-template-columns: 2.6rem 1fr; }
+.pece .radek:nth-last-child(2) { border-bottom: 1px solid var(--line); }
+.pece .radek svg { width: 2rem; height: 2rem; }
+.pece dd { font-size: var(--step-0); }
+@media (max-width: 52rem) { .pece dl { grid-template-columns: 1fr; } .pece .radek:nth-last-child(2) { border-bottom: 0; } .hero { background: var(--bg); } .hero .wrap > div:first-child { padding-bottom: 0; } .hero .wrap { align-items: start; } .fasada { margin-bottom: var(--space-4); } }
+.oblast-box { margin-top: var(--space-4); background: var(--pale); border-left: 4px solid var(--blue); padding: var(--space-3); }
+.oblast-box .firma { font-family: var(--font-head); font-weight: 600; font-size: var(--step-1); color: var(--navy); margin-bottom: 0.4rem; }
+.paticka { margin-top: 0; }

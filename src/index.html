@@ -21,8 +21,11 @@
   <div class="wrap">
     <h2>Co pro váš dům zajistíme</h2>
     <p class="predmluva">Každá služba je jedno okno do chodu domu. Vyberte si celek, nebo jen to, co zrovna potřebujete.</p>
-    <div class="okna-mrizka">
-      {% for s in data.sluzby %}<article class="okno{{ ' sviti' if loop.first }}"><h3>{{ s.nazev }}</h3><p>{{ s.popis }}</p></article>{% endfor %}
+    <div class="fasada-sluzeb">
+      <div class="strecha" aria-hidden="true"></div>
+      <div class="zed okna-mrizka">
+        {% for s in data.sluzby %}<article class="okno{{ ' sviti' if loop.first }}"><h3>{{ s.nazev }}</h3><p>{{ s.popis }}</p></article>{% endfor %}
+      </div>
     </div>
   </div>
 </section>
@@ -54,18 +57,12 @@
   </div>
 </section>
 
-<section class="oblast">
-  <div class="wrap">
-    <h2>Působíme na Vysočině</h2>
-    <p>Jsme z Havlíčkova Brodu. <span class="firma">Správu zajišťujeme na Vysočině, případně i v celé České republice.</span></p>
-  </div>
-</section>
-
 <section class="sekce kontakt" id="kontakt">
   <div class="wrap">
     <div>
       <h2>Ozvěte se nám</h2>
       <p class="uvod">Napište, o jaký dům jde a co potřebujete vyřešit. Ozveme se vám s dalším postupem.</p>
+      <div class="oblast-box"><p class="firma">Působíme na Vysočině</p><p>Jsme z Havlíčkova Brodu a správu zajišťujeme na Vysočině, případně i v celé České republice.</p></div>
     </div>
     {% include "_formular.html" %}
   </div>

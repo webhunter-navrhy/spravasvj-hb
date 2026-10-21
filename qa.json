@@ -2,10 +2,7 @@
   "url": "https://webhunter-navrhy.github.io/spravasvj-hb/",
   "ok": true,
   "chyby": [],
-  "varovani": [
-    "Title má 74 znaků (>70)",
-    "Dotykové cíle <40 px na mobilu: 2× (např. a.logo \"\" 140×38; a.odkaz \"Co zajišťujeme\" 112×26)"
-  ],
+  "varovani": [],
   "metriky": {
     "sirky": {
       "1440": {
@@ -38,7 +35,7 @@
     "preneseno_mobil_MB": 0.14,
     "snimku_mobil": 4,
     "seo": {
-      "title": "Správa SVJ Havlíčkův Brod – správa a účetnictví pro společenství vlastníků",
+      "title": "Správa SVJ Havlíčkův Brod – správa a účetnictví SVJ",
       "description": "Kompletní správa SVJ, účetnictví, roční vyúčtování a technická správa domů. Správa SVJ Havlíčkův Bro",
       "lang": "cs",
       "h1": 1,
@@ -51,7 +48,7 @@
       "canonical": true,
       "viewport": true
     },
-    "maly_dotykovy_cil": 2,
+    "maly_dotykovy_cil": 0,
     "font_nadpis": "Bricolage Grotesque",
     "font_text": "Public Sans",
     "podstranky": {

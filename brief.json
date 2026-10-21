@@ -2,23 +2,34 @@
  "slug": "spravasvj-hb",
  "zdroj_url": null,
  "firma": "Správa SVJ Havlíčkův Brod",
- "obor": [],
+ "obor": [
+  "správa SVJ",
+  "účetnictví SVJ",
+  "technická správa domů"
+ ],
  "ico": "",
  "ares": null,
  "kontakty": {},
- "logo": null,
- "barvy": {},
+ "logo": "podklady z ~/wh-navrhy-ops/prilohy/santruckova/logo-sprava-svj-hb.jpg (vektorizováno do static/logo.svg)",
+ "barvy": {
+  "doporucene": [
+   "#2e678a",
+   "#0e3c59"
+  ],
+  "zdroj": "logo klientky"
+ },
  "fotky": [],
- "fakta": [],
- "chybi": [
-  "firma",
-  "obor",
-  "kontakty",
-  "IČO",
-  "logo",
-  "barvy",
-  "fotky",
-  "texty/služby"
+ "fakta": [
+  "Nová firma, začíná 1. 1. 2027",
+  "Služby: kompletní správa SVJ, vedení účetnictví SVJ, zpracování ročních vyúčtování, zajištění technické správy a revizí",
+  "Důraz: transparentní hospodaření, vyúčtování služeb, hlídání splatností, komunikace s úřady a dodavateli",
+  "Oblast: Vysočina, případně celá ČR",
+  "Fotky klientka nedodala, reference ani čísla nejsou"
  ],
- "_poznamka": "Prázdný brief k ručnímu vyplnění."
+ "chybi": [
+  "fotky",
+  "kontaktní e-mail a adresa pro web",
+  "IČO"
+ ],
+ "_poznamka": "Vyplněno ručně ze zadání klientky (e-mail vlákno Nová poptávka)."
 }
