@@ -36,6 +36,7 @@
 <footer class="paticka">
   <div class="wrap">
     <p>{{ site.nazev }}{% if site.ico %} · IČO {{ site.ico }}{% endif %}</p>
+    {% if site.kontakt.adresa.ulice %}<p>{{ site.kontakt.adresa.ulice }}, {{ site.kontakt.adresa.psc }} {{ site.kontakt.adresa.mesto }}</p>{% endif %}
     {% if site.kontakt.email %}<p><a href="mailto:{{ site.kontakt.email }}">{{ site.kontakt.email }}</a></p>{% endif %}
     {% if site.kontakt.telefon %}<p><a href="tel:{{ site.kontakt.telefon|replace(' ', '') }}">{{ site.kontakt.telefon }}</a></p>{% endif %}
   </div>

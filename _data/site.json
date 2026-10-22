@@ -4,7 +4,7 @@
   "url": "https://webhunter-navrhy.github.io/spravasvj-hb/",
   "base": "/spravasvj-hb/",
   "lang": "cs",
-  "popis": "Kompletní správa SVJ, účetnictví, roční vyúčtování a technická správa domů. Správa SVJ Havlíčkův Brod, působnost Vysočina a celá ČR.",
+  "popis": "Kompletní správa SVJ, účetnictví, roční vyúčtování a technická správa domů. Správa SVJ Havlíčkův Brod, působnost všechny kraje ČR.",
   "navrh": true,
   "domena": "",
   "og_image": "placeholder.jpg",
@@ -16,8 +16,8 @@
     "email": "spravasvjhb@seznam.cz",
     "telefon": "705 594 003",
     "adresa": {
-      "ulice": "",
-      "psc": "",
+      "ulice": "Na Valech 3568",
+      "psc": "580 01",
       "mesto": "Havlíčkův Brod",
       "zeme": "CZ"
     }
