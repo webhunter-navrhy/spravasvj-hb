@@ -13,8 +13,8 @@
   "typ": "LocalBusiness",
   "ico": "",
   "kontakt": {
-    "email": "Zdeni.k@seznam.cz",
-    "telefon": "",
+    "email": "spravasvjhb@seznam.cz",
+    "telefon": "705 594 003",
     "adresa": {
       "ulice": "",
       "psc": "",
@@ -38,6 +38,10 @@
     {
       "text": "Postup",
       "href": "#pece"
+    },
+    {
+      "text": "Ceník",
+      "href": "#cenik"
     },
     {
       "text": "Kontakt",

@@ -232,3 +232,10 @@ a { color: inherit; }
 .hero .uvod { max-width: 40rem; }
 .ulice { width: 100%; height: clamp(11rem, 24vw, 21rem); display: block; margin-top: var(--space-2); }
 @media (max-width: 40rem) { .hero h1 { font-size: var(--step-4); } .ulice { height: 9rem; } }
+
+.cenik { background: var(--pale); }
+.cenik-radky { margin-top: var(--space-3); display: grid; gap: var(--space-2); max-width: 40rem; }
+.cenik-radky .radek { display: flex; justify-content: space-between; gap: var(--space-3); align-items: baseline; background: #fff; border-left: 4px solid var(--blue); padding: var(--space-3); }
+.cenik-radky dt { font-family: var(--font-head); font-weight: 600; color: var(--navy); }
+.cenik-radky dd { margin: 0; text-align: right; }
+@media (max-width: 52rem) { .cenik-radky .radek { flex-direction: column; gap: 0.3rem; } .cenik-radky dd { text-align: left; } }
