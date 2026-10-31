@@ -42,5 +42,16 @@
   </div>
 </footer>
 <script src="{{ asset('js/main.js') }}" defer></script>
+{% if site.cookie_lista %}<div class="cookie" id="cookie" role="dialog" aria-label="Souhlas s cookies" hidden>
+  <p>Web používá cookies Google Analytics, které nám pomáhají zjistit, jak je web využíván. Spustíme je jen s Vaším souhlasem.</p>
+  <div class="cookie__b"><button type="button" id="cookie-ano">Souhlasím</button><button type="button" id="cookie-ne" class="cookie__ne">Odmítnout</button></div>
+</div>
+<script>(function(){var GA="{{ site.ga_id or '' }}",ZIVA=/^(www\.)?spravasvjhb\.cz$/.test(location.hostname);
+window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}
+function ga(){if(!GA||!ZIVA||window.swGAOn)return;window.swGAOn=1;gtag('js',new Date());gtag('config',GA);var s=document.createElement('script');s.async=1;s.src='https://www.googletagmanager.com/gtag/js?id='+GA;document.head.appendChild(s);}
+var b=document.getElementById('cookie'),v;try{v=localStorage.getItem('cookie-souhlas');}catch(e){}
+if(v==='ano'){ga();return;}if(v){return;}b.hidden=false;
+function z(x){try{localStorage.setItem('cookie-souhlas',x);}catch(e){}b.hidden=true;if(x==='ano')ga();}
+document.getElementById('cookie-ano').onclick=function(){z('ano');};document.getElementById('cookie-ne').onclick=function(){z('ne');};})();</script>{% endif %}
 </body>
 </html>

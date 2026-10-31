@@ -47,5 +47,7 @@
       "text": "Kontakt",
       "href": "#kontakt"
     }
-  ]
+  ],
+  "cookie_lista": true,
+  "ga_id": ""
 }

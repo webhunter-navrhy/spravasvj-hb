@@ -239,3 +239,11 @@ a { color: inherit; }
 .cenik-radky dt { font-family: var(--font-head); font-weight: 600; color: var(--navy); }
 .cenik-radky dd { margin: 0; text-align: right; }
 @media (max-width: 52rem) { .cenik-radky .radek { flex-direction: column; gap: 0.3rem; } .cenik-radky dd { text-align: left; } }
+
+/* cookie lišta */
+.cookie{position:fixed;left:1rem;right:1rem;bottom:1rem;z-index:90;max-width:44rem;margin-inline:auto;display:flex;gap:1rem 1.5rem;align-items:center;flex-wrap:wrap;justify-content:space-between;background:#1f2a36;color:#f1ece3;padding:1rem 1.25rem;border-radius:8px;box-shadow:0 8px 30px rgba(0,0,0,.3);font-size:.9rem;line-height:1.5}
+.cookie[hidden]{display:none}
+.cookie p{margin:0;flex:1 1 18rem}
+.cookie__b{display:flex;gap:.6rem}
+.cookie button{font:inherit;font-weight:500;cursor:pointer;padding:.55rem 1.1rem;border-radius:6px;border:1px solid #f6f3ec;background:#f6f3ec;color:#1f2a36}
+.cookie button.cookie__ne{background:transparent;border-color:#6b645a;color:#f1ece3}
