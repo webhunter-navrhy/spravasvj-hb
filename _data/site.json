@@ -26,9 +26,9 @@
   "sameas": [],
   "cenove_rozpeti": "",
   "formular": {
-    "endpoint": "",
-    "demo": true,
-    "predmet": "Poptávka z webu"
+    "endpoint": "https://formsubmit.co/spravasvjhb@seznam.cz",
+    "demo": false,
+    "predmet": "Poptávka z webu spravasvjhb.cz"
   },
   "nav": [
     {

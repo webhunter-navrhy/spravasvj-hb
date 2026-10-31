@@ -76,6 +76,7 @@
       <div class="oblast-box"><p class="firma">Působíme v celé České republice</p><p>Jsme z Havlíčkova Brodu a správu zajišťujeme pro všechny kraje v České republice.</p></div>
       <p class="kontakt-mail">Napište přímo na <a href="mailto:{{ site.kontakt.email }}">{{ site.kontakt.email }}</a>{% if site.kontakt.telefon %} nebo volejte <a href="tel:{{ site.kontakt.telefon|replace(' ', '') }}">{{ site.kontakt.telefon }}</a>{% endif %}</p>
     </div>
+    {% include "_formular.html" %}
   </div>
 </section>
 {% endblock %}
