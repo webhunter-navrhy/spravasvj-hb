@@ -16,3 +16,6 @@ sitemap.xml, robots.txt, 404.html, `.nojekyll`. Formulář: `site.formular.demo=
 
 Pravidla: logo klienta vlevo v hlavičce (`site.logo` = soubor v `static/`), fonty self-host a test háčků, žádná vymyšlená čísla.
 `img/placeholder.jpg` je jen zástupná fotka, nahraď ji.
+
+
+**Od 8. 11. 2026 nasazuje GitHub Action (.github/workflows/deploy.yml) z větve main, Pages = Actions. deploy.sh už nepoužívat (přepsal by to větví gh-pages). Administrace /admin/ = webhunter-admin, id spravasvj-hb.**

@@ -5,12 +5,12 @@
 <section class="sekce hero">
   <div class="wrap">
     <div class="hero-text">
-      <span class="stitek">Od 1. ledna 2027 · Vysočina</span>
-      <h1>Správa vašeho domu bez starostí</h1>
-      <p class="uvod">Kompletní správa a účetnictví pro společenství vlastníků jednotek. Hospodaříme transparentně a hlídáme termíny, aby vlastníci věděli, na čem jsou.</p>
+      <span class="stitek">{{ data.texty.hero.stitek }}</span>
+      <h1>{{ data.texty.hero.h1 }}</h1>
+      <p class="uvod">{{ data.texty.hero.uvod }}</p>
       <div class="akce">
-        <a class="tlacitko" href="#kontakt">Napsat nám</a>
-        <a class="odkaz" href="#sluzby">Co zajišťujeme</a>
+        <a class="tlacitko" href="#kontakt">{{ data.texty.hero.tlacitko }}</a>
+        <a class="odkaz" href="#sluzby">{{ data.texty.hero.tlacitko2 }}</a>
       </div>
     </div>
     
@@ -20,8 +20,8 @@
 
 <section class="sekce okna" id="sluzby">
   <div class="wrap">
-    <h2>Co pro váš dům zajistíme</h2>
-    <p class="predmluva">Každá služba je jedno okno do chodu domu. Vyberte si celek, nebo jen to, co zrovna potřebujete.</p>
+    <h2>{{ data.texty.sluzby.nadpis }}</h2>
+    <p class="predmluva">{{ data.texty.sluzby.text }}</p>
     <div class="fasada-sluzeb">
       <div class="strecha" aria-hidden="true"></div>
       <div class="zed okna-mrizka">
@@ -34,36 +34,36 @@
 <section class="sekce pece" id="pece">
   <div class="wrap">
     <div>
-      <h2>Na čem si zakládáme</h2>
-      <p class="uvod">Vlastník má právo vědět, kam jdou peníze z fondu oprav. Proto je péče o dům u nás přehledná.</p>
+      <h2>{{ data.texty.pece.nadpis }}</h2>
+      <p class="uvod">{{ data.texty.pece.text }}</p>
     </div>
     <dl>
-      <div class="radek">
+      {% if data.texty.pece.body|length > 0 %}{% set b = data.texty.pece.body[0] %}<div class="radek">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 20h18M6 16V9m6 7V5m6 11v-6"/></svg>
-        <div><dt>Transparentní hospodaření</dt><dd>Jasný přehled příjmů a výdajů společenství.</dd></div>
-      </div>
-      <div class="radek">
+        <div><dt>{{ b.nadpis }}</dt><dd>{{ b.text }}</dd></div>
+      </div>{% endif %}
+      {% if data.texty.pece.body|length > 1 %}{% set b = data.texty.pece.body[1] %}<div class="radek">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h14v16l-3-2-2 2-2-2-2 2-2-2-3 2zM9 9h6M9 13h6"/></svg>
-        <div><dt>Vyúčtování služeb</dt><dd>Srozumitelné vyúčtování, ve kterém se vlastník vyzná.</dd></div>
-      </div>
-      <div class="radek">
+        <div><dt>{{ b.nadpis }}</dt><dd>{{ b.text }}</dd></div>
+      </div>{% endif %}
+      {% if data.texty.pece.body|length > 2 %}{% set b = data.texty.pece.body[2] %}<div class="radek">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="5" width="16" height="15" rx="2"/><path d="M4 10h16M9 3v4m6-4v4"/></svg>
-        <div><dt>Hlídání splatností</dt><dd>Hlídáme termíny plateb i povinností domu.</dd></div>
-      </div>
-      <div class="radek">
+        <div><dt>{{ b.nadpis }}</dt><dd>{{ b.text }}</dd></div>
+      </div>{% endif %}
+      {% if data.texty.pece.body|length > 3 %}{% set b = data.texty.pece.body[3] %}<div class="radek">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5h16v11H9l-5 4z"/></svg>
-        <div><dt>Komunikace s úřady a dodavateli</dt><dd>Jednání s úřady a dodavateli vyřídíme za společenství.</dd></div>
-      </div>
+        <div><dt>{{ b.nadpis }}</dt><dd>{{ b.text }}</dd></div>
+      </div>{% endif %}
     </dl>
   </div>
 </section>
 
 <section class="sekce cenik" id="cenik">
   <div class="wrap">
-    <h2>Ceník</h2>
+    <h2>{{ data.cenik.nadpis }}</h2>
     <dl class="cenik-radky">
-      <div class="radek"><dt>Správa SVJ</dt><dd><strong>150 Kč</strong> za bytovou jednotku měsíčně</dd></div>
-      <div class="radek"><dt>Jednotné měsíční hlášení zaměstnavatele (JHMZ)</dt><dd><strong>50 Kč</strong> za osobu měsíčně</dd></div>
+      {% for p in data.cenik.polozky %}<div class="radek"><dt>{{ p.nazev }}</dt><dd><strong>{{ p.cena }}</strong>{% if p.jednotka %} {{ p.jednotka }}{% endif %}</dd></div>
+      {% endfor %}
     </dl>
   </div>
 </section>
@@ -71,9 +71,9 @@
 <section class="sekce kontakt" id="kontakt">
   <div class="wrap">
     <div>
-      <h2>Ozvěte se nám</h2>
-      <p class="uvod">Napište, o jaký dům jde a co potřebujete vyřešit. Ozveme se vám s dalším postupem.</p>
-      <div class="oblast-box"><p class="firma">Působíme v celé České republice</p><p>Jsme z Havlíčkova Brodu a správu zajišťujeme pro všechny kraje v České republice.</p></div>
+      <h2>{{ data.texty.kontakt.nadpis }}</h2>
+      <p class="uvod">{{ data.texty.kontakt.text }}</p>
+      <div class="oblast-box"><p class="firma">{{ data.texty.kontakt.oblast_nadpis }}</p><p>{{ data.texty.kontakt.oblast_text }}</p></div>
       <p class="kontakt-mail">Napište přímo na <a href="mailto:{{ site.kontakt.email }}">{{ site.kontakt.email }}</a>{% if site.kontakt.telefon %} nebo volejte <a href="tel:{{ site.kontakt.telefon|replace(' ', '') }}">{{ site.kontakt.telefon }}</a>{% endif %}</p>
     </div>
     {% include "_formular.html" %}

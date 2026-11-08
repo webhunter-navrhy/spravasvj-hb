@@ -1,0 +1,41 @@
+{
+ "hero": {
+  "stitek": "Od 1. ledna 2027 · Vysočina",
+  "h1": "Správa vašeho domu bez starostí",
+  "uvod": "Kompletní správa a účetnictví pro společenství vlastníků jednotek. Hospodaříme transparentně a hlídáme termíny, aby vlastníci věděli, na čem jsou.",
+  "tlacitko": "Napsat nám",
+  "tlacitko2": "Co zajišťujeme"
+ },
+ "sluzby": {
+  "nadpis": "Co pro váš dům zajistíme",
+  "text": "Každá služba je jedno okno do chodu domu. Vyberte si celek, nebo jen to, co zrovna potřebujete."
+ },
+ "pece": {
+  "nadpis": "Na čem si zakládáme",
+  "text": "Vlastník má právo vědět, kam jdou peníze z fondu oprav. Proto je péče o dům u nás přehledná.",
+  "body": [
+   {
+    "nadpis": "Transparentní hospodaření",
+    "text": "Jasný přehled příjmů a výdajů společenství."
+   },
+   {
+    "nadpis": "Vyúčtování služeb",
+    "text": "Srozumitelné vyúčtování, ve kterém se vlastník vyzná."
+   },
+   {
+    "nadpis": "Hlídání splatností",
+    "text": "Hlídáme termíny plateb i povinností domu."
+   },
+   {
+    "nadpis": "Komunikace s úřady a dodavateli",
+    "text": "Jednání s úřady a dodavateli vyřídíme za společenství."
+   }
+  ]
+ },
+ "kontakt": {
+  "nadpis": "Ozvěte se nám",
+  "text": "Napište, o jaký dům jde a co potřebujete vyřešit. Ozveme se vám s dalším postupem.",
+  "oblast_nadpis": "Působíme v celé České republice",
+  "oblast_text": "Jsme z Havlíčkova Brodu a správu zajišťujeme pro všechny kraje v České republice."
+ }
+}

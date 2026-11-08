@@ -202,13 +202,25 @@ def main():
         with open(vystup, "w", encoding="utf-8") as fh:
             fh.write(kod)
 
+    # administrace (webhunter-admin, id spravasvj-hb): cache busting jako na webu
+    adm = os.path.join(ROOT, "admin")
+    if os.path.isdir(adm):
+        shutil.copytree(adm, os.path.join(DIST, "admin"))
+        p = os.path.join(DIST, "admin", "index.html")
+        s_ = open(p, encoding="utf-8").read()
+        s_ = s_.replace("__V_ACSS__", hash_souboru(os.path.join(adm, "admin.css"))).replace("__V_AJS__", hash_souboru(os.path.join(adm, "admin.js")))
+        open(p, "w", encoding="utf-8").write(s_)
+    # pro administraci: který commit je nasazený
+    json.dump({"sha": os.environ.get("GITHUB_SHA", "local"), "built": datetime.datetime.now(datetime.timezone.utc).isoformat(timespec="seconds")},
+              open(os.path.join(DIST, "version.json"), "w"))
+
     # robots, sitemap, CNAME
     navrh = bool(site.get("navrh"))
     with open(os.path.join(DIST, "robots.txt"), "w") as fh:
         if navrh:
             fh.write("User-agent: *\nDisallow: /\n")
         else:
-            fh.write(f"User-agent: *\nAllow: /\n\nSitemap: {site['url']}sitemap.xml\n")
+            fh.write(f"User-agent: *\nAllow: /\nDisallow: /admin/\n\nSitemap: {site['url']}sitemap.xml\n")
     dnes = datetime.date.today().isoformat()
     with open(os.path.join(DIST, "sitemap.xml"), "w", encoding="utf-8") as fh:
         fh.write('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n')

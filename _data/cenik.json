@@ -1,0 +1,15 @@
+{
+ "nadpis": "Ceník",
+ "polozky": [
+  {
+   "nazev": "Správa SVJ",
+   "cena": "150 Kč",
+   "jednotka": "za bytovou jednotku měsíčně"
+  },
+  {
+   "nazev": "Jednotné měsíční hlášení zaměstnavatele (JHMZ)",
+   "cena": "50 Kč",
+   "jednotka": "za osobu měsíčně"
+  }
+ ]
+}
